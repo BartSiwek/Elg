@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Elg">
+      <UniqueIdentifier>{c94a7ea5-4f6e-437a-acbd-6052747be8f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities">
+      <UniqueIdentifier>{a81606f9-a0c1-410d-a54b-1b2cdef24a52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Assert">
+      <UniqueIdentifier>{ad7b4f8b-eb3c-44c4-b355-2589224d6335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\StringHash">
+      <UniqueIdentifier>{c471e56c-066c-4142-9181-0ab4d6000e94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\EntityManager">
+      <UniqueIdentifier>{f64ed9d8-40b8-48f7-b125-c9a53f7b379a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\EntityManager\ComponentPool">
+      <UniqueIdentifier>{5d2ba5e2-76df-4856-a97a-7e43f4fab55a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\EntityManager\EntityPool">
+      <UniqueIdentifier>{1b591b1c-15de-442b-ab87-e80c00eb65ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Clock">
+      <UniqueIdentifier>{96d93a78-f040-41c2-9a21-aeeed3f7fe0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Game">
+      <UniqueIdentifier>{81e7c937-688b-44eb-af12-489e2c1d3a21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\AssetManager">
+      <UniqueIdentifier>{5c8b51fc-254a-46fb-b656-7a55bbb59330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\AssetManager\AssetManagers">
+      <UniqueIdentifier>{c17d6032-b688-46f2-9e01-64ba4e7af8d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\AssetManager\Assets">
+      <UniqueIdentifier>{8f3bdf84-a121-41bc-b08e-593de495dc21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\AssetManager\Loaders">
+      <UniqueIdentifier>{a3f47619-8846-4904-ae25-185e6dc45ac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Performance">
+      <UniqueIdentifier>{bcbd5940-d0ac-4607-ba52-367bbf88ba74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Filesystem">
+      <UniqueIdentifier>{93c73b18-8002-41f5-98aa-05d4e95ff832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Memory">
+      <UniqueIdentifier>{a98c437f-9fef-45d7-adee-482702b7c5bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\MPL">
+      <UniqueIdentifier>{9c8c343a-eb8d-485d-97c8-a0aa44e21a69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\ETL">
+      <UniqueIdentifier>{330fb7b3-049f-4ca2-8332-f21bd92f8e22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor">
+      <UniqueIdentifier>{0fc24581-dfc1-40eb-a34e-89a5d1bf4c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\arithmetic">
+      <UniqueIdentifier>{e1042333-c067-46fb-8575-e17a4ab861fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\array">
+      <UniqueIdentifier>{68cad6d5-2975-4e37-9deb-bf2aeac529f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\comparison">
+      <UniqueIdentifier>{94288e56-7c15-4c84-b25a-f8404b256af5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\config">
+      <UniqueIdentifier>{3725a723-6bde-4124-8c8a-b3f538f77962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\control">
+      <UniqueIdentifier>{f7ceec55-b10f-4c2c-807e-543de8f18432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\debug">
+      <UniqueIdentifier>{7d1805fe-2403-49f1-a5e1-85d6756bee83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\detail">
+      <UniqueIdentifier>{c00693b4-626c-4a90-ac8c-a5e808efb760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\facilities">
+      <UniqueIdentifier>{c6a1922b-92b2-45d0-9ded-147b0ee44ece}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\iteration">
+      <UniqueIdentifier>{21835e1b-3d06-451e-a3fa-b4b957333438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\list">
+      <UniqueIdentifier>{a2006e48-9984-4ce2-a22c-f5acd919db71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\logical">
+      <UniqueIdentifier>{e462e7b7-edac-4818-9212-2d3c0b9a86c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\punctuation">
+      <UniqueIdentifier>{647c1ce6-2ad4-4157-bb1d-2def2e1b3698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\repetition">
+      <UniqueIdentifier>{ba64a351-f678-40da-860b-7b79287020d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\selection">
+      <UniqueIdentifier>{8c82d70c-ea8f-4dea-bae8-91f49d9aabc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\seq">
+      <UniqueIdentifier>{a8f63b3b-02da-4428-a7db-2b5a0bdee27a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\slot">
+      <UniqueIdentifier>{80a314a7-5b99-45e6-a484-c2e07a131fae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\tuple">
+      <UniqueIdentifier>{e6915ad2-071a-408c-92e8-02efa5a0256d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\arithmetic\detail">
+      <UniqueIdentifier>{120785ff-49cb-4b3d-b566-92a373e51eea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\control\detail">
+      <UniqueIdentifier>{e42a7efe-28f1-44ea-b6b1-78a46cddd863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\control\detail\dmc">
+      <UniqueIdentifier>{821f6588-8aab-49ad-af81-00ba2e64c565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\control\detail\edg">
+      <UniqueIdentifier>{a2820ece-64c5-4355-8211-cc7e32b180ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\control\detail\msvc">
+      <UniqueIdentifier>{22ea9fcb-7ecf-42c3-b87d-e2ba9612f8c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\detail\dmc">
+      <UniqueIdentifier>{56e5b60e-67fd-43af-a0a4-acedd5be32b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\iteration\detail">
+      <UniqueIdentifier>{2e4430dd-c25c-47b2-99e3-ac8366c819bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\iteration\detail\bounds">
+      <UniqueIdentifier>{2d9c380f-527f-4aeb-b553-86a0a0730f94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\iteration\detail\iter">
+      <UniqueIdentifier>{45e7c01f-7d2d-474d-990d-a256cac60d63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\list\detail">
+      <UniqueIdentifier>{58556f1d-8e12-4b88-b123-a6af701d93eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\list\detail\dmc">
+      <UniqueIdentifier>{87cdd39f-396c-46c0-83ef-4aca5c4c83cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\list\detail\edg">
+      <UniqueIdentifier>{61124e32-e5eb-4857-af73-fddb355633b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\repetition\detail">
+      <UniqueIdentifier>{415386a0-58ca-42f9-9500-43107d9a41aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\repetition\detail\dmc">
+      <UniqueIdentifier>{85382b03-4563-492b-a6b4-d3ac32cc4022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\repetition\detail\edg">
+      <UniqueIdentifier>{a57d3825-2be1-4595-8457-b98f4cfe7d9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\repetition\detail\msvc">
+      <UniqueIdentifier>{076f17f8-fe4a-436d-a10b-b63692fda2d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\seq\detail">
+      <UniqueIdentifier>{c1971d76-e5a7-42a6-91d7-bfc989117acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\Utilities\Preprocessor\slot\detail">
+      <UniqueIdentifier>{8afeebaf-01dc-4c22-a715-26c59ab58c9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\External">
+      <UniqueIdentifier>{9aae06bc-92ed-480a-a035-4f21eaf8725a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\External\stb_image">
+      <UniqueIdentifier>{feb85139-1e32-4950-8516-ec1bec1cc82a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg\External\jansson">
+      <UniqueIdentifier>{c9e95ce3-96cf-40fb-9075-cd990cb859cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Clock\Duration.h" />
+    <ClInclude Include="Source\Clock\DurationTypedefs.h" />
+    <ClInclude Include="Source\Clock\GameClock.h" />
+    <ClInclude Include="Source\Clock\HighResolutionClock.h" />
+    <ClInclude Include="Source\Clock\TimePoint.h" />
+    <ClInclude Include="Source\EntityManager\ComponentPool\ComponentPool-inl.h" />
+    <ClInclude Include="Source\EntityManager\ComponentPool\ComponentPool.h" />
+    <ClInclude Include="Source\EntityManager\EntityPool\EntityPool-inl.h" />
+    <ClInclude Include="Source\EntityManager\EntityPool\EntityPool.h" />
+    <ClInclude Include="Source\EntityManager\DescriptionMacros.h" />
+    <ClInclude Include="Source\EntityManager\EntityManager-inl.h" />
+    <ClInclude Include="Source\EntityManager\EntityManager.h" />
+    <ClInclude Include="Source\EntityManager\EntityManagerProfiling.h" />
+    <ClInclude Include="Source\EntityManager\EntitySet.h" />
+    <ClInclude Include="Source\EntityManager\IdMacros.h" />
+    <ClInclude Include="Source\External\jansson\hashtable.h" />
+    <ClInclude Include="Source\External\jansson\jansson.h" />
+    <ClInclude Include="Source\External\jansson\jansson_config.h" />
+    <ClInclude Include="Source\External\jansson\jansson_private.h" />
+    <ClInclude Include="Source\External\jansson\strbuffer.h" />
+    <ClInclude Include="Source\External\jansson\utf.h" />
+    <ClInclude Include="Source\Game\Game-inl.h" />
+    <ClInclude Include="Source\Game\Game.h" />
+    <ClInclude Include="Source\Game\GameProfiling.h" />
+    <ClInclude Include="Source\Memory\AlignedMallocAllocator.h" />
+    <ClInclude Include="Source\Memory\MallocAllocator.h" />
+    <ClInclude Include="Source\Memory\Memory.h" />
+    <ClInclude Include="Source\Performance\FrameStatistics.h" />
+    <ClInclude Include="Source\Performance\ScopeProfiler.h" />
+    <ClInclude Include="Source\Utilities\Assert\Assert.h" />
+    <ClInclude Include="Source\Utilities\Assert\StaticAssert.h" />
+    <ClInclude Include="Source\Utilities\ETL\Algorithm.h" />
+    <ClInclude Include="Source\Utilities\ETL\DynamicArray.h" />
+    <ClInclude Include="Source\Utilities\ETL\FixedSizeArray.h" />
+    <ClInclude Include="Source\Utilities\ETL\Functional.h" />
+    <ClInclude Include="Source\Utilities\ETL\GenericIterator.h" />
+    <ClInclude Include="Source\Utilities\ETL\Iterator.h" />
+    <ClInclude Include="Source\Utilities\ETL\Memory.h" />
+    <ClInclude Include="Source\Utilities\ETL\StaticArray.h" />
+    <ClInclude Include="Source\Utilities\ETL\TypeTraits.h" />
+    <ClInclude Include="Source\Utilities\ETL\Utility.h" />
+    <ClInclude Include="Source\Utilities\Filesystem\AsyncFile.h" />
+    <ClInclude Include="Source\Utilities\Filesystem\File.h" />
+    <ClInclude Include="Source\Utilities\Filesystem\FileAccessMode.h" />
+    <ClInclude Include="Source\Utilities\Filesystem\FileHandle.h" />
+    <ClInclude Include="Source\Utilities\Filesystem\OSPath.h" />
+    <ClInclude Include="Source\Utilities\Filesystem\Path.h" />
+    <ClInclude Include="Source\Utilities\MPL\MplGcd.h" />
+    <ClInclude Include="Source\Utilities\MPL\MplMath.h" />
+    <ClInclude Include="Source\Utilities\MPL\MplRatio.h" />
+    <ClInclude Include="Source\Utilities\MPL\MplRatioTypedefs.h" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\detail\div_base.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\add.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\dec.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\div.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\inc.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\mod.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\mul.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\sub.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\data.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\elem.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\insert.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\pop_back.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\pop_front.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\push_back.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\push_front.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\remove.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\replace.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\reverse.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\size.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comparison\equal.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comparison\greater.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comparison\greater_equal.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comparison\less.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comparison\less_equal.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comparison\not_equal.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\config\config.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\config\limits.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\detail\dmc\while.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\detail\edg\while.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\detail\msvc\while.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\detail\while.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\deduce_d.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\expr_if.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\expr_iif.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\if.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\iif.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\while.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\debug\assert.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\debug\error.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\debug\line.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\dmc\auto_rec.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\auto_rec.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\check.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\is_binary.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\is_nullary.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\is_unary.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\null.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\split.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\apply.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\empty.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\expand.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\identity.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\intercept.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\is_1.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\is_empty.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\is_empty_or_1.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\lower1.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\lower2.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\lower3.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\lower4.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\lower5.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\upper1.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\upper2.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\upper3.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\upper4.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\upper5.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\forward1.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\forward2.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\forward3.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\forward4.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\forward5.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\reverse1.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\reverse2.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\reverse3.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\reverse4.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\reverse5.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\finish.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\local.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\rlocal.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\self.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\start.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\iterate.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\local.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\self.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\detail\dmc\fold_left.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\detail\edg\fold_left.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\detail\edg\fold_right.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\detail\fold_left.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\detail\fold_right.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\adt.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\append.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\at.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\cat.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\enum.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\filter.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\first_n.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\fold_left.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\fold_right.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\for_each.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\for_each_i.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\for_each_product.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\rest_n.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\reverse.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\size.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\to_tuple.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\transform.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\and.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\bitand.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\bitnor.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\bitor.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\bitxor.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\bool.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\compl.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\nor.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\not.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\or.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\xor.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\punctuation\comma.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\punctuation\comma_if.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\punctuation\paren.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\punctuation\paren_if.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\detail\dmc\for.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\detail\edg\for.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\detail\msvc\for.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\detail\for.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\deduce_r.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\deduce_z.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_binary_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_params_with_a_default.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_params_with_defaults.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_shifted.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_shifted_binary_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_shifted_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_trailing.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_trailing_binary_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_trailing_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\for.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\repeat.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\repeat_from_to.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\selection\max.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\selection\min.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\detail\split.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\cat.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\elem.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\enum.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\filter.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\first_n.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\fold_left.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\fold_right.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\for_each.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\for_each_i.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\for_each_product.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\insert.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\pop_back.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\pop_front.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\push_back.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\push_front.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\remove.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\replace.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\rest_n.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\reverse.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\seq.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\size.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\subseq.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\to_array.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\to_tuple.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\transform.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\counter.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\def.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\shared.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\slot1.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\slot2.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\slot3.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\slot4.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\slot5.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\counter.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\slot.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\tuple\eat.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\tuple\elem.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\tuple\rem.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\tuple\reverse.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\tuple\to_list.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\tuple\to_seq.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\assert_msg.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\cat.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comma.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comma_if.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comparison.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\debug.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\dec.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\empty.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\enum.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\enum_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\enum_params_with_a_default.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\enum_params_with_defaults.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\enum_shifted.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\enum_shifted_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\expand.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\expr_if.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\for.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\identity.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\if.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\inc.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iterate.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\library.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\limits.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\max.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\min.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\punctuation.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repeat.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repeat_2nd.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repeat_3rd.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repeat_from_to.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repeat_from_to_2nd.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repeat_from_to_3rd.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\selection.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\stringize.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\tuple.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\while.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\wstringize.hpp" />
+    <ClInclude Include="Source\Utilities\StringHash\Hash.h" />
+    <ClInclude Include="Source\Utilities\StringHash\X65599Hash.h" />
+    <ClInclude Include="Source\Utilities\StringHash\X65599HashPreprocessor.h" />
+    <ClInclude Include="Source\Utilities\Asserts.h" />
+    <ClInclude Include="Source\Utilities\Macros.h" />
+    <ClInclude Include="Source\Utilities\Singleton.h" />
+    <ClInclude Include="Source\Utilities\Types.h" />
+    <ClInclude Include="Source\AssetManager\Loaders\TextMeshLoader.h" />
+    <ClInclude Include="Source\AssetManager\Assets\Mesh.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Clock\GameClock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Clock\HighResolutionClock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\jansson\dump.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\jansson\error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\jansson\hashtable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\jansson\load.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\jansson\memory.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\jansson\pack_unpack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\jansson\strbuffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\jansson\strconv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\jansson\utf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\jansson\value.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\stb_image\stb_image.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Memory\AlignedMallocAllocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Memory\DisableNewDelete.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Memory\MallocAllocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Performance\FrameStatistics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Performance\ScopeProfiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\Assert\Assert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\Filesystem\File-Win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\Filesystem\OSPath-Win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\Filesystem\Path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Elg.Tests">
+      <UniqueIdentifier>{a23b64f2-981a-468d-b2ab-deed78ea850d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg.Tests\EntityManager">
+      <UniqueIdentifier>{b64a1ee2-8e10-4ba5-af90-4c02d0229502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg.Tests\Utilities">
+      <UniqueIdentifier>{dea4b1b9-07de-4747-9f8a-da2cf5525ad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg.Tests\Utilities\StringHash">
+      <UniqueIdentifier>{c489411d-51d5-4852-9b26-ee0b46057e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg.Tests\Clock">
+      <UniqueIdentifier>{b29ded56-f486-47c8-ba79-21aea6efddc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg.Tests\Performance">
+      <UniqueIdentifier>{3ecc3f10-813a-4def-960e-75d78eac452a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg.Tests\Utilities\Filesystem">
+      <UniqueIdentifier>{9d8c92f7-6f41-45c0-998a-3c4f9a12eba1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg.Tests\Memory">
+      <UniqueIdentifier>{62f4f692-a93c-43d7-a7e6-248c92163921}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg.Tests\Utilities\MPL">
+      <UniqueIdentifier>{a8bcff20-5fae-4612-9e53-2b70622b49dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg.Tests\Utilities\ETL">
+      <UniqueIdentifier>{dcd824ae-99d1-47d3-9e31-6a6900dd8ced}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg.Tests\External">
+      <UniqueIdentifier>{e3b9d925-e7fb-4200-b936-408619d32f3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg.Tests\External\Jansson">
+      <UniqueIdentifier>{dbd3e131-6f95-4ec2-be17-2fc1bf95595b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Elg.Tests\External\Jansson\API">
+      <UniqueIdentifier>{6b1cc993-1ccb-4f74-b9ea-5cddea3f4dbf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Clock\DurationTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Clock\HighResolutionClockTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Clock\TimePointTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EntityManager\ComponentPoolTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EntityManager\EntityManagerTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EntityManager\EntityPoolTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EntityManager\EntitySetTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\API\ArrayTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\API\CopyTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\API\DumpCallbackTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\API\DumpTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\API\EqualTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\API\LoadbTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\API\LoadTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\API\MemoryFuncsTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\API\NumberTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\API\ObjectTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\API\PackTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\API\SimpleTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\API\UnpackTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\InvalidInputTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\InvalidUnicodeTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\External\Jansson\ValidInputTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Memory\NewDeleteTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Performance\ScopeProfilerTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\ETL\AlgorithmTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\ETL\FunctionalTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\ETL\GenericIteratorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\ETL\IteratorTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\ETL\MemoryTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\ETL\TypeTraitsTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\ETL\UtilityTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\Filesystem\FileTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\Filesystem\OSPathTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\Filesystem\PathTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\MPL\MplGcdTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\MPL\MplMathTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\MPL\MplRatioTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities\StringHash\StringHashTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TestAssets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\External\Jansson\Utilities.h" />
+    <ClInclude Include="Source\Utilities\ETL\TestIterator.h" />
+    <ClInclude Include="Source\TestAssets.h" />
+  </ItemGroup>
+</Project>

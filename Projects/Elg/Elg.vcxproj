@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\AssetManager\Assets\Mesh.h" />
+    <ClInclude Include="Source\AssetManager\Loaders\TextMeshLoader.h" />
+    <ClInclude Include="Source\Clock\Duration.h" />
+    <ClInclude Include="Source\Clock\DurationTypedefs.h" />
+    <ClInclude Include="Source\Clock\GameClock.h" />
+    <ClInclude Include="Source\Clock\HighResolutionClock.h" />
+    <ClInclude Include="Source\Clock\TimePoint.h" />
+    <ClInclude Include="Source\EntityManager\ComponentPool\ComponentPool-inl.h" />
+    <ClInclude Include="Source\EntityManager\ComponentPool\ComponentPool.h" />
+    <ClInclude Include="Source\EntityManager\DescriptionMacros.h" />
+    <ClInclude Include="Source\EntityManager\EntityManager-inl.h" />
+    <ClInclude Include="Source\EntityManager\EntityManager.h" />
+    <ClInclude Include="Source\EntityManager\EntityManagerProfiling.h" />
+    <ClInclude Include="Source\EntityManager\EntityPool\EntityPool-inl.h" />
+    <ClInclude Include="Source\EntityManager\EntityPool\EntityPool.h" />
+    <ClInclude Include="Source\EntityManager\EntitySet.h" />
+    <ClInclude Include="Source\EntityManager\IdMacros.h" />
+    <ClInclude Include="Source\External\jansson\hashtable.h" />
+    <ClInclude Include="Source\External\jansson\jansson.h" />
+    <ClInclude Include="Source\External\jansson\jansson_config.h" />
+    <ClInclude Include="Source\External\jansson\jansson_private.h" />
+    <ClInclude Include="Source\External\jansson\strbuffer.h" />
+    <ClInclude Include="Source\External\jansson\utf.h" />
+    <ClInclude Include="Source\Game\Game-inl.h" />
+    <ClInclude Include="Source\Game\Game.h" />
+    <ClInclude Include="Source\Game\GameProfiling.h" />
+    <ClInclude Include="Source\Memory\AlignedMallocAllocator.h" />
+    <ClInclude Include="Source\Memory\MallocAllocator.h" />
+    <ClInclude Include="Source\Memory\Memory.h" />
+    <ClInclude Include="Source\Performance\FrameStatistics.h" />
+    <ClInclude Include="Source\Performance\ScopeProfiler.h" />
+    <ClInclude Include="Source\Utilities\Asserts.h" />
+    <ClInclude Include="Source\Utilities\Assert\Assert.h" />
+    <ClInclude Include="Source\Utilities\Assert\StaticAssert.h" />
+    <ClInclude Include="Source\Utilities\ETL\Algorithm.h" />
+    <ClInclude Include="Source\Utilities\ETL\DynamicArray.h" />
+    <ClInclude Include="Source\Utilities\ETL\FixedSizeArray.h" />
+    <ClInclude Include="Source\Utilities\ETL\Functional.h" />
+    <ClInclude Include="Source\Utilities\ETL\GenericIterator.h" />
+    <ClInclude Include="Source\Utilities\ETL\Iterator.h" />
+    <ClInclude Include="Source\Utilities\ETL\Memory.h" />
+    <ClInclude Include="Source\Utilities\ETL\StaticArray.h" />
+    <ClInclude Include="Source\Utilities\ETL\TypeTraits.h" />
+    <ClInclude Include="Source\Utilities\ETL\Utility.h" />
+    <ClInclude Include="Source\Utilities\Filesystem\AsyncFile.h" />
+    <ClInclude Include="Source\Utilities\Filesystem\File.h" />
+    <ClInclude Include="Source\Utilities\Filesystem\FileAccessMode.h" />
+    <ClInclude Include="Source\Utilities\Filesystem\FileHandle.h" />
+    <ClInclude Include="Source\Utilities\Filesystem\OSPath.h" />
+    <ClInclude Include="Source\Utilities\Filesystem\Path.h" />
+    <ClInclude Include="Source\Utilities\Macros.h" />
+    <ClInclude Include="Source\Utilities\MPL\MplGcd.h" />
+    <ClInclude Include="Source\Utilities\MPL\MplMath.h" />
+    <ClInclude Include="Source\Utilities\MPL\MplRatio.h" />
+    <ClInclude Include="Source\Utilities\MPL\MplRatioTypedefs.h" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\add.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\dec.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\detail\div_base.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\div.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\inc.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\mod.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\mul.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\arithmetic\sub.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\data.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\elem.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\insert.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\pop_back.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\pop_front.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\push_back.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\push_front.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\remove.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\replace.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\reverse.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\array\size.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\assert_msg.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\cat.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comma.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comma_if.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comparison.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comparison\equal.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comparison\greater.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comparison\greater_equal.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comparison\less.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comparison\less_equal.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\comparison\not_equal.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\config\config.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\config\limits.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\deduce_d.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\detail\dmc\while.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\detail\edg\while.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\detail\msvc\while.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\detail\while.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\expr_if.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\expr_iif.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\if.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\iif.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\control\while.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\debug.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\debug\assert.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\debug\error.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\debug\line.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\dec.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\auto_rec.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\check.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\dmc\auto_rec.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\is_binary.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\is_nullary.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\is_unary.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\null.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\detail\split.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\empty.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\enum.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\enum_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\enum_params_with_a_default.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\enum_params_with_defaults.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\enum_shifted.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\enum_shifted_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\expand.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\expr_if.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\apply.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\empty.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\expand.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\identity.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\intercept.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\is_1.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\is_empty.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\facilities\is_empty_or_1.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\for.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\identity.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\if.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\inc.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iterate.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\lower1.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\lower2.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\lower3.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\lower4.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\lower5.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\upper1.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\upper2.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\upper3.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\upper4.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\bounds\upper5.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\finish.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\forward1.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\forward2.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\forward3.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\forward4.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\forward5.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\reverse1.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\reverse2.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\reverse3.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\reverse4.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\iter\reverse5.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\local.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\rlocal.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\self.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\detail\start.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\iterate.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\local.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\iteration\self.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\library.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\limits.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\adt.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\append.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\at.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\cat.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\detail\dmc\fold_left.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\detail\edg\fold_left.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\detail\edg\fold_right.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\detail\fold_left.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\detail\fold_right.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\enum.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\filter.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\first_n.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\fold_left.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\fold_right.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\for_each.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\for_each_i.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\for_each_product.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\rest_n.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\reverse.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\size.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\to_tuple.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\list\transform.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\and.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\bitand.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\bitnor.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\bitor.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\bitxor.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\bool.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\compl.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\nor.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\not.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\or.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\logical\xor.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\max.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\min.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\punctuation.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\punctuation\comma.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\punctuation\comma_if.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\punctuation\paren.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\punctuation\paren_if.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repeat.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repeat_2nd.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repeat_3rd.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repeat_from_to.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repeat_from_to_2nd.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repeat_from_to_3rd.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\deduce_r.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\deduce_z.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\detail\dmc\for.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\detail\edg\for.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\detail\for.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\detail\msvc\for.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_binary_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_params_with_a_default.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_params_with_defaults.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_shifted.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_shifted_binary_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_shifted_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_trailing.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_trailing_binary_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\enum_trailing_params.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\for.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\repeat.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\repetition\repeat_from_to.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\selection.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\selection\max.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\selection\min.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\cat.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\detail\split.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\elem.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\enum.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\filter.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\first_n.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\fold_left.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\fold_right.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\for_each.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\for_each_i.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\for_each_product.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\insert.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\pop_back.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\pop_front.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\push_back.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\push_front.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\remove.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\replace.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\rest_n.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\reverse.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\seq.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\size.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\subseq.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\to_array.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\to_tuple.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\seq\transform.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\counter.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\counter.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\def.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\shared.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\slot1.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\slot2.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\slot3.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\slot4.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\detail\slot5.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\slot\slot.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\stringize.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\tuple.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\tuple\eat.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\tuple\elem.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\tuple\rem.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\tuple\reverse.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\tuple\to_list.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\tuple\to_seq.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\while.hpp" />
+    <ClInclude Include="Source\Utilities\Preprocessor\wstringize.hpp" />
+    <ClInclude Include="Source\Utilities\Singleton.h" />
+    <ClInclude Include="Source\Utilities\StringHash\Hash.h" />
+    <ClInclude Include="Source\Utilities\StringHash\X65599Hash.h" />
+    <ClInclude Include="Source\Utilities\StringHash\X65599HashPreprocessor.h" />
+    <ClInclude Include="Source\Utilities\Types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Clock\GameClock.cpp" />
+    <ClCompile Include="Source\Clock\HighResolutionClock.cpp" />
+    <ClCompile Include="Source\External\jansson\dump.c" />
+    <ClCompile Include="Source\External\jansson\error.c" />
+    <ClCompile Include="Source\External\jansson\hashtable.c" />
+    <ClCompile Include="Source\External\jansson\load.c" />
+    <ClCompile Include="Source\External\jansson\memory.c" />
+    <ClCompile Include="Source\External\jansson\pack_unpack.c" />
+    <ClCompile Include="Source\External\jansson\strbuffer.c" />
+    <ClCompile Include="Source\External\jansson\strconv.c" />
+    <ClCompile Include="Source\External\jansson\utf.c" />
+    <ClCompile Include="Source\External\jansson\value.c" />
+    <ClCompile Include="Source\External\stb_image\stb_image.c" />
+    <ClCompile Include="Source\Memory\AlignedMallocAllocator.cpp" />
+    <ClCompile Include="Source\Memory\DisableNewDelete.cpp" />
+    <ClCompile Include="Source\Memory\MallocAllocator.cpp" />
+    <ClCompile Include="Source\Performance\FrameStatistics.cpp" />
+    <ClCompile Include="Source\Performance\ScopeProfiler.cpp" />
+    <ClCompile Include="Source\Utilities\Assert\Assert.cpp" />
+    <ClCompile Include="Source\Utilities\Filesystem\File-Win.cpp" />
+    <ClCompile Include="Source\Utilities\Filesystem\OSPath-Win.cpp" />
+    <ClCompile Include="Source\Utilities\Filesystem\Path.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2EE7B4A1-90B8-4759-9305-84C77EB3728C}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Elg</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Builds\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Builds\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Builds\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Builds\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>ELG_SCOPE_PROFILING;ENABLE_ASSERTS;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(SolutionDir)Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <StringPooling>true</StringPooling>
+      <AdditionalOptions>/analyze %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <OmitFramePointers>false</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;UnitTest++.vsnet2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\SDL\Lib\VS2010\Debug;$(SolutionDir)Libs\UnitTest++\lib\VS2010\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>ELG_SCOPE_PROFILING;ENABLE_ASSERTS;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(SolutionDir)Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <OmitFramePointers>false</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;UnitTest++.vsnet2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\SDL\Lib\VS2010\Debug;$(SolutionDir)Libs\UnitTest++\lib\VS2010\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>ELG_SCOPE_PROFILING;WIN32;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(SolutionDir)Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AdditionalOptions>/analyze %(AdditionalOptions)</AdditionalOptions>
+      <OmitFramePointers>false</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;UnitTest++.vsnet2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\SDL\Lib\VS2010\Release;$(SolutionDir)Libs\UnitTest++\lib\VS2010\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>ELG_SCOPE_PROFILING;WIN32;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(SolutionDir)Src;$(SolutionDir)Libs/Boost/Include;$(SolutionDir)Libs/stb_image/Include;$(SolutionDir)Libs/SDL/Include;$(SolutionDir)Libs/UnitTest++/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <OmitFramePointers>false</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;UnitTest++.vsnet2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\SDL\Lib\VS2010\Release;$(SolutionDir)Libs\UnitTest++\lib\VS2010\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
